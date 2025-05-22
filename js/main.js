@@ -48,33 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Theme Toggle
-  const themeToggle = document.getElementById("theme-toggle")
-  const body = document.body
-  const themeIcon = themeToggle.querySelector("i")
 
-  // Check for saved theme preference
-  const savedTheme = localStorage.getItem("theme")
-  if (savedTheme === "dark") {
-    body.classList.add("dark-mode")
-    themeIcon.classList.remove("fa-moon")
-    themeIcon.classList.add("fa-sun")
-  }
-
-  // Toggle theme on button click
-  themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode")
-
-    if (body.classList.contains("dark-mode")) {
-      themeIcon.classList.remove("fa-moon")
-      themeIcon.classList.add("fa-sun")
-      localStorage.setItem("theme", "dark")
-    } else {
-      themeIcon.classList.remove("fa-sun")
-      themeIcon.classList.add("fa-moon")
-      localStorage.setItem("theme", "light")
-    }
-  })
 
   // Back to Top Button
   const backToTopBtn = document.querySelector(".back-to-top")

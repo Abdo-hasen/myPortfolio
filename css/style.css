@@ -1,38 +1,5 @@
 /* ===== Variables ===== */
 :root {
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-light: #a5b4fc;
-  --secondary: #f43f5e;
-  --dark: #1e293b;
-  --light: #f8fafc;
-  --gray: #64748b;
-  --gray-light: #e2e8f0;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #ef4444;
-  --body-bg: #ffffff;
-  --body-color: #1e293b;
-  --card-bg: #ffffff;
-  --card-border: #e2e8f0;
-  --navbar-bg: rgba(255, 255, 255, 0.8);
-  --navbar-color: #1e293b;
-  --footer-bg: #1e293b;
-  --footer-color: #f8fafc;
-  --transition: all 0.3s ease;
-  --transition-slow: all 0.5s ease;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  --gradient-secondary: linear-gradient(135deg, var(--secondary), #e11d48);
-}
-
-/* Dark Mode Variables */
-.dark-mode {
   --primary: #818cf8;
   --primary-dark: #6366f1;
   --primary-light: #c7d2fe;
@@ -53,6 +20,10 @@
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  --gradient-secondary: linear-gradient(135deg, var(--secondary), #e11d48);
 }
 
 /* ===== Base Styles ===== */
