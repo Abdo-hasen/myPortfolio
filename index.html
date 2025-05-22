@@ -1,640 +1,983 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdelrahman Hasan | Backend Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="dark-mode">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dark-mode">
     <!-- Preloader -->
     <div class="preloader">
-        <div class="loader">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-        </div>
+      <div class="loader">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-    <span class="logo-text">&lt;Abdelrahman <span class="text-primary">/&gt;</span></span>
-</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="logo-text"
+            >&lt;Abdelrahman<span class="text-primary">/&gt;</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                    <h1 class="display-4 fw-bold mb-4">Hi, I'm <span class="text-primary">Abdelrahman</span></h1>
-                    <h2 class="mb-4 typewriter">Backend Developer| Software Engineer | Full Stack Developer</h2>
-                    <p class="lead mb-4">ITI graduate and professional backend developer. My core expertise is in Laravel and building solid, scalable backend systems.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
-                        <a href="https://drive.google.com/drive/folders/1rYABR9N0wO0WpYBKU8nuIhtCgW3b66VN?usp=drive_link" target="_blank" class="btn btn-outline-primary btn-lg">Download CV</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="hero-image">
-                        <div class="cube">
-                            <div class="face front"><i class="fab fa-php fa-3x"></i></div>
-                            <div class="face back"><i class="fas fa-database fa-3x"></i></div>
-                            <div class="face right"><i class="fab fa-laravel fa-3x"></i></div>
-                            <div class="face left"><i class="fas fa-code fa-3x"></i></div>
-                            <div class="face top"><i class="fab fa-html5 fa-3x"></i></div>
-                            <div class="face bottom"><i class="fab fa-css3-alt fa-3x"></i></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold mb-4">
+              Hi, I'm <span class="text-primary">Abdelrahman</span>
+            </h1>
+            <h2 class="mb-4 typewriter">
+              Backend Developer| Software Engineer | Full Stack Developer
+            </h2>
+            <p class="lead mb-4">
+              ITI graduate and professional backend developer. My core expertise
+              is in Laravel and building solid, scalable backend systems.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#projects" class="btn btn-primary btn-lg"
+                >View Projects</a
+              >
+              <a
+                href="https://drive.google.com/drive/folders/1rYABR9N0wO0WpYBKU8nuIhtCgW3b66VN?usp=drive_link"
+                target="_blank"
+                class="btn btn-outline-primary btn-lg"
+                >Download CV</a
+              >
             </div>
+          </div>
+          <div
+            class="col-lg-6 text-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="hero-image">
+              <div class="cube">
+                <div class="face front"><i class="fab fa-php fa-3x"></i></div>
+                <div class="face back">
+                  <i class="fas fa-database fa-3x"></i>
+                </div>
+                <div class="face right">
+                  <i class="fab fa-laravel fa-3x"></i>
+                </div>
+                <div class="face left"><i class="fas fa-code fa-3x"></i></div>
+                <div class="face top"><i class="fab fa-html5 fa-3x"></i></div>
+                <div class="face bottom">
+                  <i class="fab fa-css3-alt fa-3x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="var(--bs-primary)" fill-opacity="0.1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
+      </div>
+      <div class="hero-shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="var(--bs-primary)"
+            fill-opacity="0.1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section-padding">
-        <div class="container">
-            <div class="section-title text-center" data-aos="fade-up">
-                <h2>About Me</h2>
-                <div class="line"></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
-                    <div class="about-img">
-                        <div class="img-container">
-                            <img src="pics/mypic.jpeg" alt="Abdelrahman Hasan" class="img-fluid rounded-3">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="about-content">
-                        <h3 class="mb-4"> Backend Engineer</h3>
-                        <p class="lead mb-4">Backend Engineer Specializing in PHP, Laravel, and MySQL, with basics in HTML, CSS, Bootstrap, JS, jQuery, and Angular. I recently built "Duomart" a live e-commerce site for a freelance client with custom payment feature.</p>
-                        <p class="mb-4">I'm an ITI grad, a fast learner, and always ready for new challenges in backend development. My experience includes developing  web applications and implementing complex business logic.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="info-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <a target="_blank" href="mailto:abdohasen200@gmail.com">abdohasen200@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="info-item">
-                                    <i class="fas fa-phone"></i>
-                                    <a target="_blank" href="https://wa.me/+201011608515">01011608515</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <a href="#">Alexandria, Egypt</a>
-                                </div>
-                            </div>
-                           <div class="col-md-6 mb-3">
-                                <div class="info-item">
-                                    <i class="fas fa-phone"></i>
-                                    <a href="#">01225969340</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-4 d-flex flex-wrap align-items-center gap-3">
-                            <div class="social-links">
-                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="social-link"><i class="fas fa-users"></i></a> <!-- Qabilah icon (using users icon) -->
-                                <a href="https://wa.me/+201011608515"  target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2>About Me</h2>
+          <div class="line"></div>
         </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="about-img">
+              <div class="img-container">
+                <img
+                  src="pics/mypic.jpeg"
+                  alt="Abdelrahman Hasan"
+                  class="img-fluid rounded-3"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="about-content">
+              <h3 class="mb-4">Backend Engineer</h3>
+              <p class="lead mb-4">
+                Backend Engineer Specializing in PHP, Laravel, and MySQL, with
+                basics in HTML, CSS, Bootstrap, JS, jQuery, and Angular. I
+                recently built "Duomart" a live e-commerce site for a freelance
+                client with custom payment feature.
+              </p>
+              <p class="mb-4">
+                I'm an ITI grad, a fast learner, and always ready for new
+                challenges in backend development. My experience includes
+                developing web applications and implementing complex business
+                logic.
+              </p>
+              <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                  <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a
+                      target="_blank"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=abdohasen200@gmail.com"
+                      >abdohasen200@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <a target="_blank" href="https://wa.me/+201011608515"
+                      >01011608515</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">Alexandria, Egypt</a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="#">01225969340</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 d-flex flex-wrap align-items-center gap-3">
+                <div class="social-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/Abdo-hasen"
+                    class="social-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://qabilah.com/profile/abdo-hasen/professional-profile"
+                    class="social-link"
+                    ><i class="fas fa-users"></i
+                  ></a>
+                  <!-- Qabilah icon (using users icon) -->
+                  <a
+                    target="_blank"
+                    href="https://wa.me/+201011608515"
+                    target="_blank"
+                    class="social-link"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section-padding bg-light skills-section">
-        <div class="container skills-container">
-            <div class="section-title text-center" data-aos="fade-up">
-                <h2>My Skills</h2>
-                <div class="line"></div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-category">
-                        <h5><i class="fas fa-server me-2 text-primary"></i>Backend Development</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
-                            <span class="skill-tag"><i class="fab fa-laravel"></i> Laravel</span>
-                            <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-                            <span class="skill-tag"><i class="fas fa-exchange-alt"></i> RESTful APIs</span>
-                            <span class="skill-tag"><i class="fas fa-code"></i> OOP</span>
-                            <span class="skill-tag"><i class="fas fa-cogs"></i> Apache</span>
-                            <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                            <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-category">
-                        <h5><i class="fas fa-tools me-2 text-primary"></i>Tools & DevOps</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                            <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
-                            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-                            <span class="skill-tag"><i class="fas fa-vial"></i> Unit Testing</span>
-                            <span class="skill-tag"><i class="fab fa-linux"></i> Linux/Red Hat</span>
-                            <span class="skill-tag"><i class="fab fa-wordpress"></i> WordPress</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-category">
-                        <h5><i class="fas fa-laptop-code me-2 text-primary"></i>Frontend Development</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
-                            <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                            <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                            <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="skill-tag"><i class="fab fa-js-square"></i> jQuery</span>
-                            <span class="skill-tag"><i class="fab fa-angular"></i> Angular</span>
-                            <span class="skill-tag"><i class="fas fa-paint-brush"></i> UX/UI Design Basics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container skills-container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2>My Skills</h2>
+          <div class="line"></div>
         </div>
-        <div class="skills-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="var(--bs-primary)" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,224C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-category">
+              <h5>
+                <i class="fas fa-server me-2 text-primary"></i>Backend
+                Development
+              </h5>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                <span class="skill-tag"
+                  ><i class="fab fa-laravel"></i> Laravel</span
+                >
+                <span class="skill-tag"
+                  ><i class="fas fa-database"></i> MySQL</span
+                >
+                <span class="skill-tag"
+                  ><i class="fas fa-exchange-alt"></i> RESTful APIs</span
+                >
+                <span class="skill-tag"><i class="fas fa-code"></i> OOP</span>
+                <span class="skill-tag"
+                  ><i class="fas fa-cogs"></i> Apache</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-node-js"></i> Node.js</span
+                >
+                <span class="skill-tag"
+                  ><i class="fas fa-database"></i> MongoDB</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-category">
+              <h5>
+                <i class="fas fa-tools me-2 text-primary"></i>Tools & DevOps
+              </h5>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fab fa-git-alt"></i> Git</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-github"></i> GitHub</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-docker"></i> Docker</span
+                >
+                <span class="skill-tag"
+                  ><i class="fas fa-vial"></i> Unit Testing</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-linux"></i> Linux/Red Hat</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-wordpress"></i> WordPress</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-category">
+              <h5>
+                <i class="fas fa-laptop-code me-2 text-primary"></i>Frontend
+                Development
+              </h5>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fab fa-html5"></i> HTML5</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-css3-alt"></i> CSS3</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-js-square"></i> jQuery</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-angular"></i> Angular</span
+                >
+                <span class="skill-tag"
+                  ><i class="fas fa-paint-brush"></i> UX/UI Design Basics</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="skills-shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="var(--bs-primary)"
+            fill-opacity="0.1"
+            d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,224C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section-padding projects-section">
-        <div class="container projects-container">
-            <div class="section-title text-center" data-aos="fade-up">
-                <h2>My Projects</h2>
-                <div class="line"></div>
-            </div>
-            <div class="row g-4">
-                <!-- Project 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./pics/duo.jpeg" alt="Duomart" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <div class="project-info">
-                                <h4>Duomart</h4>
-                                <p>Developed a live e-commerce platform for furniture sales with English/Arabic support and flexible deposit system (10%-100%) integrated with Paymob.</p>
-                                <div class="tech-stack">
-                                    <span>PHP</span>
-                                    <span>Laravel</span>
-                                    <span>MySQL</span>
-                                    <span>Paymob API</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <div class="project-links">
-                                   <a target="_blank" href="https://duo-mart.clickventures-portal.me/" class="btn btn-sm btn-primary" title="Link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-sm btn-outline-primary" title="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-hover">
-                            <div class="project-hover-content">
-                                <h4>Duomart</h4>
-                                <p>A live e-commerce platform with a flexible deposit system (10%-100%) integrated with Paymob for partial payments.</p>
-                                <a href="#" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="pics/learnify-pic.jpg" alt="Learnify" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <div class="project-info">
-                                <h4>Learnify</h4>
-                                <p>Developing a platform with role-based dashboards, live/recorded lectures, exams, subscriptions, and real-time notifications.</p>
-                                <div class="tech-stack">
-                                    <span>Angular</span>
-                                    <span>Laravel</span>
-                                    <span>MySQL</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
-                                    <span>Bootstrap</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-primary" title="Link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/Abdo-hasen/Learnify" class="btn btn-sm btn-outline-primary" title="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-hover">
-                            <div class="project-hover-content">
-                                <h4>Learnify</h4>
-                                <p>Comprehensive learning management system with multiple user roles and real-time features.</p>
-                                <a href="#" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="pics/freelance.jpg" alt="GigFlow" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <div class="project-info">
-                                <h4>GigFlow</h4>
-                                <p>Developed a freelance marketplace connecting workers with clients, managed by administrators with comprehensive API support.</p>
-                                <div class="tech-stack">
-                                    <span>Laravel</span>
-                                    <span>API</span>
-                                    <span>MySQL</span>
-                                    <span>SOLID Principles</span>
-                                    <span>Design Patterns</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <div class="project-links">
-                                    <a target="_blank" href="https://drive.google.com/drive/folders/1Mn7lg70XmoIOGZOLgtLWL3zc6-UyhgBr?usp=drive_link" class="btn btn-sm btn-primary" title="Link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/Abdo-hasen/worker-system" class="btn btn-sm btn-outline-primary" title="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-hover">
-                            <div class="project-hover-content">
-                                <h4>GigFlow</h4>
-                                <p>Connects workers with clients through a robust API-driven platform with admin oversight.</p>
-                                <a href="#" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="pics/bank.webp" alt="SmartCollect" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <div class="project-info">
-                                <h4>SmartCollect</h4>
-                                <p>Built a specialized financial platform for banks to streamline bill management and collection with comprehensive reporting.</p>
-                                <div class="tech-stack">
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Bootstrap</span>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <div class="project-links">
-                                    <a target="_blank" href="https://drive.google.com/drive/folders/1nyYVZQtXSNO6OpMcJYT5TefVMdowKWnX?usp=sharing" class="btn btn-sm btn-primary" title="Link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/Abdo-hasen/Invoice_system" class="btn btn-sm btn-outline-primary" title="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-hover">
-                            <div class="project-hover-content">
-                                <h4>SmartCollect</h4>
-                                <p>Streamlines bill management and collection for financial institutions with detailed tracking.</p>
-                                <a href="#" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="pics/restaurant.jpg" alt="Resto" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <div class="project-info">
-                                <h4>Resto</h4>
-                                <p>Web Application with user roles, menu/order management, reservations, payments, and real-time order tracking.</p>
-                                <div class="tech-stack">
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-primary" title="Link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/Abdo-hasen/PHP_Restaurant" class="btn btn-sm btn-outline-primary" title="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-hover">
-                            <div class="project-hover-content">
-                                <h4>Resto</h4>
-                                <p>Complete solution for restaurants with order workflows, reservations, and real-time tracking.</p>
-                                <a href="#" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Project Button -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="add-project">
-                        <div class="add-project-content">
-                            <div class="icon">
-                                <i class="fas fa-plus-circle"></i>
-                            </div>
-                            <h4>More Projects</h4>
-                            <p>View all my projects on GitHub</p>
-                            <a target="_blank" href="https://github.com/Abdo-hasen" class="btn btn-primary">GitHub Profile</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container projects-container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2>My Projects</h2>
+          <div class="line"></div>
         </div>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <img src="./pics/duo.jpeg" alt="Duomart" class="img-fluid" />
+              </div>
+              <div class="project-content">
+                <div class="project-info">
+                  <h4>Duomart</h4>
+                  <p>
+                    Developed a live e-commerce platform for furniture sales
+                    with English/Arabic support and flexible deposit system
+                    (10%-100%) integrated with Paymob.
+                  </p>
+                  <div class="tech-stack">
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>Paymob API</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <div class="project-links">
+                    <a
+                      target="_blank"
+                      href="https://duo-mart.clickventures-portal.me/"
+                      class="btn btn-sm btn-primary"
+                      title="Link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-outline-primary"
+                      title="GitHub Repository"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-hover">
+                <div class="project-hover-content">
+                  <h4>Duomart</h4>
+                  <p>
+                    A live e-commerce platform with a flexible deposit system
+                    (10%-100%) integrated with Paymob for partial payments.
+                  </p>
+                  <a href="#" class="btn">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="pics/learnify-pic.jpg"
+                  alt="Learnify"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-info">
+                  <h4>Learnify</h4>
+                  <p>
+                    Developing a platform with role-based dashboards,
+                    live/recorded lectures, exams, subscriptions, and real-time
+                    notifications.
+                  </p>
+                  <div class="tech-stack">
+                    <span>Angular</span>
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>Bootstrap</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <div class="project-links">
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/drive/folders/1UL7U2CFrtkhnTs65BqFPq9YVMOZ7kL2U?usp=sharing"
+                      class="btn btn-sm btn-primary"
+                      title="Link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Abdo-hasen/Learnify"
+                      class="btn btn-sm btn-outline-primary"
+                      title="GitHub Repository"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-hover">
+                <div class="project-hover-content">
+                  <h4>Learnify</h4>
+                  <p>
+                    Comprehensive learning management system with multiple user
+                    roles and real-time features.
+                  </p>
+                  <a href="#" class="btn">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <img src="pics/freelance.jpg" alt="GigFlow" class="img-fluid" />
+              </div>
+              <div class="project-content">
+                <div class="project-info">
+                  <h4>GigFlow</h4>
+                  <p>
+                    Developed a freelance marketplace connecting workers with
+                    clients, managed by administrators with comprehensive API
+                    support.
+                  </p>
+                  <div class="tech-stack">
+                    <span>Laravel</span>
+                    <span>API</span>
+                    <span>MySQL</span>
+                    <span>SOLID Principles</span>
+                    <span>Design Patterns</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <div class="project-links">
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/drive/folders/1Mn7lg70XmoIOGZOLgtLWL3zc6-UyhgBr?usp=drive_link"
+                      class="btn btn-sm btn-primary"
+                      title="Link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Abdo-hasen/worker-system"
+                      class="btn btn-sm btn-outline-primary"
+                      title="GitHub Repository"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="pics/bank.webp"
+                  alt="SmartCollect"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-info">
+                  <h4>SmartCollect</h4>
+                  <p>
+                    Built a specialized financial platform for banks to
+                    streamline bill management and collection with comprehensive
+                    reporting.
+                  </p>
+                  <div class="tech-stack">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <div class="project-links">
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/drive/folders/1nyYVZQtXSNO6OpMcJYT5TefVMdowKWnX?usp=sharing"
+                      class="btn btn-sm btn-primary"
+                      title="Link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Abdo-hasen/Invoice_system"
+                      class="btn btn-sm btn-outline-primary"
+                      title="GitHub Repository"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <img src="pics/restaurant.jpg" alt="Resto" class="img-fluid" />
+              </div>
+              <div class="project-content">
+                <div class="project-info">
+                  <h4>Resto</h4>
+                  <p>
+                    Web Application with user roles, menu/order management,
+                    reservations, payments, and real-time order tracking.
+                  </p>
+                  <div class="tech-stack">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-primary" title="Link">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Abdo-hasen/PHP_Restaurant"
+                      class="btn btn-sm btn-outline-primary"
+                      title="GitHub Repository"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Project Button -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="add-project">
+              <div class="add-project-content">
+                <div class="icon">
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <h4>More Projects</h4>
+                <p>View all my projects on GitHub</p>
+                <a
+                  target="_blank"
+                  href="https://github.com/Abdo-hasen"
+                  class="btn btn-primary"
+                  >GitHub Profile</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section-padding bg-light experience-section">
-        <div class="container">
-            <div class="section-title text-center" data-aos="fade-up">
-                <h2>Experience & Education</h2>
-                <div class="line"></div>
-            </div>
+    <section
+      id="experience"
+      class="section-padding bg-light experience-section"
+    >
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2>Experience & Education</h2>
+          <div class="line"></div>
+        </div>
 
-<div class="row">
-    <div class="col-lg-6" data-aos="fade-right">
-        <h3 class="mb-4 experience-title">Work Experience</h3>
-        <div class="timeline">
-            <div class="timeline-progress"></div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h3 class="mb-4 experience-title">Work Experience</h3>
+            <div class="timeline">
+              <div class="timeline-progress"></div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h5>Freelance Backend Developer</h5>
-                        <span class="badge bg-primary">Nov 2024 - Present</span>
-                    </div>
-                    <h6>Self-employed</h6>
-                    <ul class="timeline-details">
-                        <li>Delivered custom backend solutions, feature enhancements, and new website development for various individual clients and businesses, including modifications to systems utilizing legacy PHP versions.</li>
-                        <li>Specialized in server-side logic, database management, and API development (primarily PHP/Laravel), with experience in payment gateway integrations (e.g., Paymob) and Egypt's e-invoicing system (ETA), manage hosting environments.</li>
-                        <li>Key Technologies: PHP (various versions), Laravel, MySQL, RESTful APIs, JavaScript, HTML, CSS, Payment Gateway APIs, ETA Integration.</li>
-                    </ul>
+                  <div class="timeline-header">
+                    <h5>Freelance Backend Developer</h5>
+                    <span class="badge bg-primary">Nov 2024 - Present</span>
+                  </div>
+                  <h6>Self-employed</h6>
+                  <ul class="timeline-details">
+                    <li>
+                      Delivered custom backend solutions, feature enhancements,
+                      and new website development for various individual clients
+                      and businesses, including modifications to systems
+                      utilizing legacy PHP versions.
+                    </li>
+                    <li>
+                      Specialized in server-side logic, database management, and
+                      API development (primarily PHP/Laravel), with experience
+                      in payment gateway integrations (e.g., Paymob) and Egypt's
+                      e-invoicing system (ETA), manage hosting environments.
+                    </li>
+                    <li>
+                      Key Technologies: PHP (various versions), Laravel, MySQL,
+                      RESTful APIs, JavaScript, HTML, CSS, Payment Gateway APIs,
+                      ETA Integration.
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              </div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h5>ICU Nurse</h5>
-                        <span class="badge bg-primary">Jul 2022 - Oct 2024</span>
-                    </div>
-                    <h6>Nareeman Hospital</h6>
-                    <ul class="timeline-details">
-                        <li>Took on a senior role, managing shifts and mentoring junior staff.</li>
-                        <li>Enhanced patient care through quick decision-making and attention to detail.</li>
-                    </ul>
+                  <div class="timeline-header">
+                    <h5>ICU Nurse</h5>
+                    <span class="badge bg-primary">Jul 2022 - Oct 2024</span>
+                  </div>
+                  <h6>Nareeman Hospital</h6>
+                  <ul class="timeline-details">
+                    <li>
+                      Took on a senior role, managing shifts and mentoring
+                      junior staff.
+                    </li>
+                    <li>
+                      Enhanced patient care through quick decision-making and
+                      attention to detail.
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              ></div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h3 class="mb-4 education-title">Education & Training</h3>
+            <div class="timeline">
+              <div class="timeline-progress"></div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h5>Full Stack PHP</h5>
+                    <span class="badge bg-primary">Dec 2024 - May 2025</span>
+                  </div>
+                  <h6>Information Technology Institute (ITI)</h6>
+                  <p>
+                    4-month Intensive Code Camp (ICC), Intensive Training
+                    Program (ITP), Ministry of Communication and Information
+                    Technology (MCIT).
+                  </p>
+                </div>
+              </div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h5>Bachelor of Nursing</h5>
+                    <span class="badge bg-primary">Graduated May 2021</span>
+                  </div>
+                  <h6>Faculty of Nursing, Alexandria University</h6>
+                  <p>
+                    Developed strong analytical thinking, problem-solving
+                    abilities, and attention to detail through comprehensive
+                    medical training.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h5>Model of Companies Simulation (MCS)</h5>
+                    <span class="badge bg-primary">2019</span>
+                  </div>
+                  <h6>Extracurricular Activity</h6>
+                  <p>
+                    Participated in a simulated business environment to enhance
+                    strategic thinking and teamwork skills.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="col-lg-6" data-aos="fade-left">
-        <h3 class="mb-4 education-title">Education & Training</h3>
-        <div class="timeline">
-            <div class="timeline-progress"></div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h5>Full Stack PHP</h5>
-                        <span class="badge bg-primary">Dec 2024 - May 2025</span>
-                    </div>
-                    <h6>Information Technology Institute (ITI)</h6>
-                    <p>4-month Intensive Code Camp (ICC), Intensive Training Program (ITP), Ministry of Communication and Information Technology (MCIT).</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h5>Bachelor of Nursing</h5>
-                        <span class="badge bg-primary">Graduated May 2021</span>
-                    </div>
-                    <h6>Faculty of Nursing, Alexandria University</h6>
-                    <p>Developed strong analytical thinking, problem-solving abilities, and attention to detail through comprehensive medical training.</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h5>Model of Companies Simulation (MCS)</h5>
-                        <span class="badge bg-primary">2019</span>
-                    </div>
-                    <h6>Extracurricular Activity</h6>
-                    <p>Participated in a simulated business environment to enhance strategic thinking and teamwork skills.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="section-title text-center" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <div class="line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
-                    <div class="contact-info">
-                        <h3 class="mb-4">Contact Information</h3>
-                        <p class="mb-4">Feel free to reach out to me for any inquiries or opportunities. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="text">
-                                <h5>Location</h5>
-                                <p>Alexandria, Egypt (Ready to relocate)</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="text">
-                                <h5>Email</h5>
-                                <p><a target="_blank" href="mailto:abdohasen200@gmail.com">abdohasen200@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="text">
-                                <h5>Phone</h5>
-                                <p><a target="_blank" href="https://wa.me/+201011608515">01011608515</a></p>
-                            </div>
-                        </div>
-                        <div class="social-links mt-4">
-                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-link"><i class="fas fa-users"></i></a> <!-- Qabilah icon -->
-                            <a href="https://wa.me/+201011608515" target ="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="contact-form-wrapper">
-                        <form id="contact-form" class="contact-form">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px"></textarea>
-                                        <label for="message">Your Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2>Get In Touch</h2>
+          <div class="line"></div>
         </div>
-        <div class="contact-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="var(--bs-primary)" fill-opacity="0.1" d="M0,224L48,213.3C96,203,192,181,288,154.7C384,128,480,96,576,90.7C672,85,768,107,864,128C960,149,1056,171,1152,165.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="contact-info">
+              <h3 class="mb-4">Contact Information</h3>
+              <p class="mb-4">
+                Feel free to reach out to me for any inquiries or opportunities.
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your vision.
+              </p>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">
+                  <h5>Location</h5>
+                  <p>Alexandria, Egypt (Ready to relocate)</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h5>Email</h5>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=abdohasen200@gmail.com
+"
+                      >abdohasen200@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h5>Phone</h5>
+                  <p>
+                    <a target="_blank" href="https://wa.me/+201011608515"
+                      >01011608515</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="social-links mt-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/Abdo-hasen"
+                  class="social-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://qabilah.com/profile/abdo-hasen/professional-profile"
+                  class="social-link"
+                  ><i class="fas fa-users"></i
+                ></a>
+                <!-- Qabilah icon -->
+                <a
+                  href="https://wa.me/+201011608515"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="contact-form-wrapper">
+              <form id="contact-form" class="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Your Email"
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        placeholder="Your Message"
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="message">Your Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="contact-shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="var(--bs-primary)"
+            fill-opacity="0.1"
+            d="M0,224L48,213.3C96,203,192,181,288,154.7C384,128,480,96,576,90.7C672,85,768,107,864,128C960,149,1056,171,1152,165.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </section>
 
     <!-- Footer -->
 
-<footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h4 class="logo">&lt;Abdelrahman<span class="text-primary">/&gt;</span></h4>
-                <p>Backend Developer specializing in PHP, Laravel, and MySQL</p>
-                <div class="social-links mt-3">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fas fa-users"></i></a>
-                    <a target="_blank" href="https://wa.me/+201011608515" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <div class="copyright mt-3">
-                    <p>&copy; 2025 Abdelrahman Hasan. All rights reserved.</p>
-                </div>
+          <div class="col-lg-12 text-center">
+            <h4 class="logo">
+              &lt;Abdelrahman<span class="text-primary">/&gt;</span>
+            </h4>
+            <p>Backend Developer specializing in PHP, Laravel, and MySQL</p>
+            <div class="social-links mt-3">
+              <a
+                target="_blank"
+                href="https://github.com/Abdo-hasen"
+                class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://qabilah.com/profile/abdo-hasen/professional-profile"
+                class="social-link"
+                ><i class="fas fa-users"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://wa.me/+201011608515"
+                class="social-link"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
+            <div class="copyright mt-3">
+              <p>&copy; 2025 Abdelrahman Hasan. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
