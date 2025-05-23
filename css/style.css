@@ -112,6 +112,20 @@ img {
   color: white;
 }
 
+/* Disabled button styles */
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-disabled:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 .section-padding {
   padding: 100px 0;
 }
@@ -441,6 +455,17 @@ img {
   margin-right: 10px;
   width: 20px;
   text-align: center;
+}
+
+.info-text {
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.info-text:hover {
+  color: var(--primary);
+  transform: translateX(5px);
 }
 
 .social-links {
