@@ -753,14 +753,7 @@ img {
   transition: transform 0.5s ease;
 }
 
-.project-card:hover::before {
-  transform: scaleX(1);
-}
-
-.project-card:hover {
-  transform: translateY(-15px) rotateX(5deg);
-  box-shadow: var(--shadow-xl);
-}
+/* Removed hover effects */
 
 .project-img {
   position: relative;
@@ -768,31 +761,103 @@ img {
   height: 220px;
 }
 
-.project-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-  opacity: 0;
-  transition: var(--transition);
-}
-
-.project-card:hover .project-img::after {
-  opacity: 1;
-}
+/* Removed image hover overlay */
 
 .project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s ease;
 }
 
-.project-card:hover .project-img img {
-  transform: scale(1.1) rotate(2deg);
+/* In Progress Badge Styles */
+.in-progress-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  z-index: 10;
+  animation: pulse-badge 2s infinite;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.badge-text {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.progress-dots span {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: dot-pulse 1.5s infinite ease-in-out;
+}
+
+.progress-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.progress-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.progress-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+  }
+}
+
+@keyframes dot-pulse {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Status Indicator */
+.status-indicator {
+  font-size: 1.2rem;
+  margin-left: 8px;
+  animation: bounce-icon 2s infinite;
+}
+
+@keyframes bounce-icon {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
 }
 
 .project-content {
@@ -800,15 +865,10 @@ img {
   position: relative;
   z-index: 1;
   background-color: var(--card-bg);
-  transition: var(--transition);
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.project-card:hover .project-content {
-  background-color: rgba(var(--card-bg), 0.95);
 }
 
 .project-info {
@@ -839,11 +899,6 @@ img {
   height: 3px;
   background: var(--gradient-primary);
   border-radius: 3px;
-  transition: var(--transition);
-}
-
-.project-card:hover .project-content h4::after {
-  width: 100%;
 }
 
 .tech-stack {
@@ -864,12 +919,7 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
-.tech-stack span:hover {
-  background-color: var(--primary);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
-}
+/* Removed tech-stack hover effects */
 
 .project-links {
   display: flex;
@@ -891,94 +941,9 @@ img {
   font-size: 1.1rem;
 }
 
-.project-links a:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
-}
+/* Removed project-links hover effects */
 
-/* Modify the project-hover styles to hide it */
-.project-hover {
-  display: none !important;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.project-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.95), rgba(79, 70, 229, 0.95));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: var(--transition-slow);
-  backdrop-filter: blur(5px);
-  transform: translateY(20px);
-  z-index: 2;
-}
-
-.project-card:hover .project-hover {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.project-hover-content {
-  text-align: center;
-  color: white;
-  padding: 30px;
-  transform: translateY(20px);
-  transition: transform 0.5s ease 0.1s;
-  opacity: 0;
-}
-
-.project-card:hover .project-hover-content {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.project-hover-content h4 {
-  margin-bottom: 15px;
-  position: relative;
-  display: inline-block;
-}
-
-.project-hover-content h4::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: white;
-  border-radius: 3px;
-  transition: width 0.3s ease;
-}
-
-.project-hover-content:hover h4::after {
-  width: 80px;
-}
-
-.project-hover-content .btn {
-  margin-top: 20px;
-  padding: 10px 25px;
-  border-radius: 50px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  background-color: white;
-  color: var(--primary);
-  border: none;
-}
-
-.project-hover-content .btn:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+/* Project hover overlays completely removed */
 
 .add-project {
   display: flex;
