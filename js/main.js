@@ -146,26 +146,103 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(skillsSection)
   }
 
-  // Form Submission
+  // Form Submission with Web3Forms
   const contactForm = document.getElementById("contact-form")
+  const submitBtn = document.getElementById("submit-btn")
+  const btnText = submitBtn?.querySelector(".btn-text")
+  const btnLoading = submitBtn?.querySelector(".btn-loading")
+  const formMessage = document.getElementById("form-message")
 
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault()
 
-      // Simple form validation
-      const name = document.getElementById("name").value
-      const email = document.getElementById("email").value
-      const message = document.getElementById("message").value
+      // Get form data
+      const formData = new FormData(contactForm)
+      const name = formData.get("name")
+      const email = formData.get("email")
+      const subject = formData.get("subject")
+      const message = formData.get("message")
 
-      if (name && email && message) {
-        // Here you would typically send the form data to a server
-        alert("Thank you for your message! I will get back to you soon.")
-        contactForm.reset()
-      } else {
-        alert("Please fill in all required fields.")
+      // Client-side validation
+      if (!name || !email || !subject || !message) {
+        showMessage("Please fill in all required fields.", "error")
+        return
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailRegex.test(email)) {
+        showMessage("Please enter a valid email address.", "error")
+        return
+      }
+
+      // Show loading state
+      setLoadingState(true)
+
+      try {
+        // Submit to Web3Forms
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        })
+
+        const result = await response.json()
+
+        if (result.success) {
+          showMessage("Thank you for your message! I will get back to you soon.", "success")
+          contactForm.reset()
+        } else {
+          throw new Error(result.message || "Something went wrong")
+        }
+      } catch (error) {
+        console.error("Form submission error:", error)
+        showMessage("Sorry, there was an error sending your message. Please try again or contact me directly.", "error")
+      } finally {
+        setLoadingState(false)
       }
     })
+  }
+
+  // Helper function to show messages
+  function showMessage(message, type) {
+    if (!formMessage) return
+
+    formMessage.innerHTML = `
+      <div class="alert alert-${type === 'success' ? 'success' : 'danger'} alert-dismissible fade show" role="alert">
+        <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'} me-2"></i>
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `
+
+    // Auto-hide success messages after 5 seconds
+    if (type === 'success') {
+      setTimeout(() => {
+        const alert = formMessage.querySelector('.alert')
+        if (alert) {
+          alert.classList.remove('show')
+          setTimeout(() => {
+            formMessage.innerHTML = ''
+          }, 150)
+        }
+      }, 5000)
+    }
+  }
+
+  // Helper function to set loading state
+  function setLoadingState(loading) {
+    if (!submitBtn || !btnText || !btnLoading) return
+
+    if (loading) {
+      submitBtn.disabled = true
+      btnText.classList.add('d-none')
+      btnLoading.classList.remove('d-none')
+    } else {
+      submitBtn.disabled = false
+      btnText.classList.remove('d-none')
+      btnLoading.classList.add('d-none')
+    }
   }
 
   // Experience & Education animations

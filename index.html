@@ -867,7 +867,14 @@
           </div>
           <div class="col-lg-7" data-aos="fade-left">
             <div class="contact-form-wrapper">
-              <form id="contact-form" class="contact-form">
+              <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2e1a95e3-24b1-4591-bceb-4f0a4ae21f54">
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+           
+
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
@@ -875,7 +882,9 @@
                         type="text"
                         class="form-control"
                         id="name"
+                        name="name"
                         placeholder="Your Name"
+                        required
                       />
                       <label for="name">Your Name</label>
                     </div>
@@ -886,7 +895,9 @@
                         type="email"
                         class="form-control"
                         id="email"
+                        name="email"
                         placeholder="Your Email"
+                        required
                       />
                       <label for="email">Your Email</label>
                     </div>
@@ -897,7 +908,9 @@
                         type="text"
                         class="form-control"
                         id="subject"
+                        name="subject"
                         placeholder="Subject"
+                        required
                       />
                       <label for="subject">Subject</label>
                     </div>
@@ -907,16 +920,24 @@
                       <textarea
                         class="form-control"
                         id="message"
+                        name="message"
                         placeholder="Your Message"
                         style="height: 150px"
+                        required
                       ></textarea>
                       <label for="message">Your Message</label>
                     </div>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-primary btn-lg w-100">
-                      Send Message
+                    <button type="submit" class="btn btn-primary btn-lg w-100" id="submit-btn">
+                      <span class="btn-text">Send Message</span>
+                      <span class="btn-loading d-none">
+                        <i class="fas fa-spinner fa-spin me-2"></i>Sending...
+                      </span>
                     </button>
+                  </div>
+                  <div class="col-12">
+                    <div id="form-message" class="mt-3"></div>
                   </div>
                 </div>
               </form>
