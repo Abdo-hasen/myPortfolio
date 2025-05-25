@@ -1288,6 +1288,50 @@ img {
   color: var(--body-color);
 }
 
+/* Input group styling */
+.input-group {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+  box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
+  transform: translateY(-2px);
+}
+
+.input-group-text {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.input-group .form-control {
+  border: none;
+  border-radius: 0;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  padding: 12px 15px;
+  font-size: 1rem;
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+.input-group .form-control::placeholder {
+  color: var(--body-color);
+  opacity: 0.6;
+}
+
 /* Form submission states */
 #submit-btn:disabled {
   opacity: 0.7;
