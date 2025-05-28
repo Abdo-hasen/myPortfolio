@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Typewriter Effect
   const typewriter = document.querySelector(".typewriter")
   if (typewriter) {
-    const phrases = ["Backend Developer", "Software Engineer", "Full Stack Developer"]
+    const phrases = ["Software Engineer", "Backend Developer"]
     let currentPhrase = 0
     let isDeleting = false
     let text = ""
