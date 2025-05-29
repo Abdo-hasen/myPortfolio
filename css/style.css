@@ -259,7 +259,7 @@ img {
 }
 
 .navbar-nav .nav-link {
-  color: white; /* Changed from var(--primary) to white */
+  color: white; 
   font-weight: 500;
   padding: 0.5rem 1rem;
   position: relative;
@@ -272,7 +272,7 @@ img {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: white; /* Changed from var(--primary) to white */
+  background-color: white; 
   transition: var(--transition);
   transform: translateX(-50%);
 }
@@ -714,7 +714,7 @@ img {
   color: white;
 }
 
-/* ===== ENHANCED PROJECTS SECTION ===== */
+/* =====  PROJECTS SECTION ===== */
 .projects-section {
   position: relative;
   overflow: hidden;
@@ -784,7 +784,6 @@ img {
   transition: transform 0.5s ease;
 }
 
-/* Removed hover effects */
 
 .project-img {
   position: relative;
@@ -792,7 +791,6 @@ img {
   height: 220px;
 }
 
-/* Removed image hover overlay */
 
 .project-img img {
   width: 100%;
@@ -972,9 +970,7 @@ img {
   font-size: 1.1rem;
 }
 
-/* Removed project-links hover effects */
 
-/* Project hover overlays completely removed */
 
 .add-project {
   display: flex;
