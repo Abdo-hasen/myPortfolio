@@ -309,6 +309,77 @@ img {
   color: var(--primary);
 }
 
+/* ===== Mobile Navbar Toggler ===== */
+.navbar-toggler {
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 6px 8px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+  border-color: var(--primary);
+}
+
+.navbar-toggler:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon {
+  display: block;
+  content: '';
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-toggler-icon::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler:hover .navbar-toggler-icon::before,
+.navbar-toggler:hover .navbar-toggler-icon::after {
+  background-color: white;
+}
+
+/* Animated hamburger menu */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
 /* ===== Hero Section ===== */
 .hero-section {
   position: relative;
