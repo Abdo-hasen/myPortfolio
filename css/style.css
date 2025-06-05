@@ -36,6 +36,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -45,6 +47,12 @@ body {
   line-height: 1.6;
   transition: var(--transition);
   overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Enhanced mobile overflow prevention */
+*, *::before, *::after {
+  max-width: 100%;
 }
 
 h1,
