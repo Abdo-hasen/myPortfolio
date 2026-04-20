@@ -524,6 +524,17 @@ img {
   transform: translateY(-5px);
 }
 
+.about-content .about-summary {
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+}
+
+.about-content .about-summary strong {
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
 .info-item {
   margin-bottom: 10px;
   border-radius: 8px;
@@ -812,6 +823,16 @@ img {
   position: relative;
 }
 
+/* Equal-height columns so tech pills + footer buttons align across a row */
+.projects-section .row.g-4 > [class*="col"] {
+  display: flex;
+}
+
+.projects-section .row.g-4 > [class*="col"] > .project-card,
+.projects-section .row.g-4 > [class*="col"] > .add-project {
+  width: 100%;
+}
+
 .project-card {
   position: relative;
   background-color: var(--card-bg);
@@ -985,16 +1006,24 @@ img {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  min-height: 0;
 }
 
 .project-info {
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 0;
+}
+
+.project-info > p {
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .project-actions {
+  flex-shrink: 0;
   margin-top: auto;
   padding-top: 20px;
 }
@@ -1022,7 +1051,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 20px 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 .tech-stack span {
@@ -1041,7 +1072,7 @@ img {
 .project-links {
   display: flex;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 .project-links a {
@@ -1252,6 +1283,11 @@ img {
 .timeline-details li {
   margin-bottom: 8px;
   position: relative;
+}
+
+.timeline-details strong {
+  color: var(--primary-light);
+  font-weight: 600;
 }
 
 .timeline-details li::before {
