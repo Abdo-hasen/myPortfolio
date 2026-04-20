@@ -26,6 +26,16 @@
   --gradient-secondary: linear-gradient(135deg, var(--secondary), #e11d48);
 }
 
+::selection {
+  background-color: rgba(129, 140, 248, 0.35);
+  color: inherit;
+}
+
+::-moz-selection {
+  background-color: rgba(129, 140, 248, 0.35);
+  color: inherit;
+}
+
 /* ===== Base Styles ===== */
 * {
   margin: 0;
@@ -1286,7 +1296,7 @@ img {
 }
 
 .timeline-details strong {
-  color: var(--primary-light);
+  color: var(--primary-light, #c7d2fe);
   font-weight: 600;
 }
 
