@@ -416,21 +416,12 @@ img {
 }
 
 .typewriter {
+  display: inline-block;
   overflow: hidden;
   border-right: 3px solid var(--primary);
   white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  vertical-align: bottom;
+  animation: blink-caret 0.75s step-end infinite;
 }
 
 @keyframes blink-caret {
@@ -1706,10 +1697,8 @@ img {
   /* Prevent typewriter text from overflowing on small phones */
   .typewriter {
     white-space: normal;
-    width: 100% !important;
     overflow: visible;
     font-size: 1.1rem;
-    letter-spacing: 0;
     animation: blink-caret 0.75s step-end infinite;
     border-right: 3px solid var(--primary);
   }
